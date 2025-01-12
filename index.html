@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heathrow VIP Meet & Assist</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="side-bar-left">
+        <img src="./imgs/viplogo.png" alt="">
+    </div>
+    <div class="sub-header-top"></div>
+    <div class="rota-dashboard">
+        <div class="staff-list">
+            <div class="staff-search-filter">
+                <input type="input" class="search-box" placeholder="Search staff...">
+                <select class="filter-dropdown">
+                    <option value="all">All</option>
+                    <option value="cleaner">Full Time</option>
+                    <option value="supervisor">Part Time</option>
+                    <option value="manager">Student</option>
+                </select>
+            </div>
+            <div class="legend">
+                <div class="legend-item">
+                    <span class="legend-color full-timer"></span>
+                    <span>Full-Time </span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color part-timer"></span>
+                    <span>Part-Time </span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color student"></span>
+                    <span>Student </span>
+                </div>
+            </div>
+            <div class="staff-box full-timer">
+                <img src="./imgs/person.png" alt="">
+                <div class="staff-name-container">
+                    <h3 class="staff-name-label">John Doe</h3>
+                    <h5 class="staff-name-position">Aircraft Cleaner</h5>
+                </div>
+            </div>
+            <div class="staff-box part-timer">
+                <img src="./imgs/person.png" alt="">
+                <div class="staff-name-container">
+                    <h3 class="staff-name-label">John Vin</h3>
+                    <h5 class="staff-name-position">Aircraft Cleaner</h5>
+                </div>
+            </div>
+            <div class="staff-box student">
+                <img src="./imgs/person.png" alt="">
+                <div class="staff-name-container">
+                    <h3 class="staff-name-label">Vin Doe</h3>
+                    <h5 class="staff-name-position">Aircraft Cleaner</h5>
+                </div>
+            </div>
+        </div>
+        <div class="calender-view">
+            <div class="calendar-header">
+                <div class="date-range">
+                    <button class="nav-btn" id="prev-week">&laquo;</button>
+                    <span id="date-range-display"></span>
+                    <button class="nav-btn" id="next-week">&raquo;</button>
+                </div>
+            </div>
+            <div class="calender-days-box">
+                <div class="calendar-days" id="calendar-days">
+                    <!-- Days will be dynamically inserted here -->
+                </div>
+            </div>
+            <div class="calendar-days" id="calendar-days">
+                <!-- Days will be dynamically inserted here -->
+            </div>
+
+            <script src="calender-script.js"></script>
+
+        </div>
+    </div>
+</body>
+
+</html>
